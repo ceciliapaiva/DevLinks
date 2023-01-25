@@ -17,7 +17,7 @@
 
 .lightMode{
 --text-color: black;
---bg-url: url(./assets/Background.jpg);
+--bg-url: url(./assets/Background\ light.jpg);
 --stroke-color: rgba(0, 0, 0, 0.5);
 --surface-color: rgba(0, 0, 0, 0.05); 
 --surface-color-hover: rgba(0, 0, 0, 0.02);
@@ -27,6 +27,7 @@
 
 body{
   background: var(--bg-url) no-repeat top center/cover;
+  height: 100vh;
 }
 
 body *{
@@ -148,4 +149,14 @@ footer{
   padding: 24px;
   text-align: center;
   font-size: 14px;
+}
+
+/*media queries*/
+@media (min-width: 700px){
+:root{
+  --bg-url: url(./assets/Background.jpg);
+}
+.lightMode{
+  --bg-url: url(./assets/Background\ light.jpg);
+}
 }
